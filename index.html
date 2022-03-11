@@ -9,6 +9,14 @@
         analytics.load("1Yf7Sc5Gl5XfTuFgQCjaa3pC2rtfoBhY");
         analytics.page();
         }}();
+        function trackuser(){
+            console.log ("user registed");
+            analytics.track("contract button clicked",{
+                name:"kumar",
+                email:"test@test.com"
+            });
+
+        }
       </script>
 </head>
 <body>
@@ -24,7 +32,7 @@
         <input >
     </dev>
     <dev>
-<button name="b1" id="b001" >submit </button>
+<button name="b1" id="b001" onclick="trackuser()">submit </button>
 
     </dev>
     </form>
